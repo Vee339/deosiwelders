@@ -773,6 +773,10 @@ section.last-page :is(span, p)::selection {
   body section.first-page {
     height: 760px;
   }
+  header .logo {
+    height: 95px;
+    width: 180px;
+  }
   .main {
     margin: 60px auto 0;
     height: 500px;
@@ -791,7 +795,7 @@ section.last-page :is(span, p)::selection {
   }
   @keyframes slide {
     100% {
-      top: -117px;
+      top: -117.6px;
     }
   }
   section.last-page {
