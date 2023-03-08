@@ -795,7 +795,7 @@ section.last-page :is(span, p)::selection {
   }
   @keyframes slide {
     100% {
-      top: -117.6px;
+      top: -108px;
     }
   }
   section.last-page {
