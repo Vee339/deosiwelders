@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* border: 1px solid red;*/
+  /*  border: 1px solid red;*/
 }
 html {
   font-size: 62.5%;
@@ -132,7 +132,7 @@ header .menuBtn {
   height: 50px;
   overflow: hidden;
   margin-left: 5px;
-  border: 1px solid var(--blackish);
+  /* border: 1px solid var(--blackish);*/
 }
 .main .text h1 ul li {
   width: 100%;
@@ -208,10 +208,6 @@ body section.second-page {
   width: 100%;
   height: 2400px;
   padding: 100px;
-  /*background: var(--blackish);
-  
-  background: url(../assets/images/pattern.svg);
-*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -795,8 +791,43 @@ section.last-page :is(span, p)::selection {
   }
   @keyframes slide {
     100% {
-      top: -108px;
+      top: -117px;
     }
+  }
+  body section.second-page {
+    height: 2400px;
+    padding: 30px 15px;
+  }
+  .second-page .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 2100px;
+  }
+  .second-page .imgBox {
+    width: 100%;
+    height: 240px;
+  }
+  .second-page .imgBox.first {
+    height: 260px;
+  }
+  .second-page .imgBox.second,
+  .second-page .imgBox.third,
+  .second-page .imgBox.fifth,
+  .second-page .imgBox.seventh,
+  .second-page .imgBox.eighth {
+    display: none;
+  }
+  .second-page .imgBox.fourth {
+    height: 180px;
+  }
+
+  .second-page .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   section.last-page {
     height: 600px;
