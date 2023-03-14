@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  /*  border: 1px solid red;*/
+  /* border: 1px solid red;*/
 }
 html {
   font-size: 62.5%;
@@ -230,6 +230,13 @@ body section.second-page {
 .second-page .imgBox {
   overflow: hidden;
   position: relative;
+}
+.second-page .imgBox.ninth,
+.second-page .imgBox.tenth,
+.second-page .imgBox.eleventh,
+.second-page .imgBox.twelfth,
+.second-page .imgBox.thirteenth {
+  display: none;
 }
 
 .second-page .imgBox.second {
@@ -795,8 +802,8 @@ section.last-page :is(span, p)::selection {
     }
   }
   body section.second-page {
-    height: 2400px;
-    padding: 30px 15px;
+    height: 2060px;
+    padding: 50px 15px 20px;
   }
   .second-page .gallery {
     display: flex;
@@ -804,13 +811,38 @@ section.last-page :is(span, p)::selection {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 2100px;
+    height: 1900px;
+  }
+  .second-page h1 {
+    margin-bottom: 40px;
   }
   .second-page .imgBox {
     width: 100%;
     height: 240px;
   }
+  .second-page .imgBox.ninth,
+  .second-page .imgBox.tenth,
+  .second-page .imgBox.eleventh,
+  .second-page .imgBox.twelfth,
+  .second-page .imgBox.thirteenth {
+    display: block;
+  }
   .second-page .imgBox.first {
+    height: 260px;
+  }
+  .second-page .imgBox.sixth {
+    height: 190px;
+  }
+  .second-page .imgBox.ninth {
+    height: 165px;
+  }
+  .second-page .imgBox.tenth {
+    height: 220px;
+  }
+  .second-page .imgBox.eleventh {
+    height: 200px;
+  }
+  .second-page .imgBox.twelfth {
     height: 260px;
   }
   .second-page .imgBox.second,
@@ -828,6 +860,25 @@ section.last-page :is(span, p)::selection {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .second-page a {
+    margin-top: 0;
+  }
+  .third-page {
+    height: 1050px;
+  }
+  .third-page .left {
+    clip-path: polygon(0% 0%, 100% 9%, 100% 92%, 0% 100%);
+    padding: 100px 20px 0;
+  }
+  .third-page .right {
+    height: 8%;
+  }
+  .third-page .services-list {
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   section.last-page {
     height: 600px;
