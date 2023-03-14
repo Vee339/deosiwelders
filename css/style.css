@@ -880,6 +880,13 @@ section.last-page :is(span, p)::selection {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+  .fourth-page h3 {
+    width: 90%;
+  }
+  .fourth-page p {
+    width: 90%;
+    line-height: 40px;
+  }
   section.last-page {
     height: 600px;
   }
