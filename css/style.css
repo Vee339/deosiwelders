@@ -111,7 +111,8 @@ header .menuBtn {
   justify-content: space-between;
   align-items: flex-end;
   gap: 40px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   padding: 90px 40px 80px;
 }
 .main .text h1 {
@@ -131,17 +132,19 @@ header .menuBtn {
   color: var(--dark-red);
   height: 50px;
   overflow: hidden;
-  margin-left: 5px;
+  margin-left: 13px;
   /* border: 1px solid var(--blackish);*/
 }
 .main .text h1 ul li {
   width: 100%;
-  border: 1px solid var(--blackish);
+  height: 50px;
+  /* border: 1px solid var(--blackish);*/
   list-style-type: none;
   text-align: left;
   position: relative;
   top: 0;
   animation: slide 7.5s steps(3) infinite;
+  line-height: 50px;
 }
 @keyframes slide {
   100% {
@@ -149,9 +152,10 @@ header .menuBtn {
   }
 }
 .main .text h1 ul li span {
+  height: 50px;
   position: relative;
   display: inline-block;
-  border: 1px solid var(--blackish);
+  /*border: 1px solid var(--blackish);*/
 }
 .main .text h1 ul li span::after {
   content: "";
@@ -557,14 +561,20 @@ section.last-page :is(span, p)::selection {
   }
   .main .text h1 ul {
     height: 40px;
+    /* background: yellow; */
   }
   .main .text h1 ul li {
+    height: 40px;
     animation: slide 7.5s steps(3) infinite;
+    line-height: 40px;
   }
   @keyframes slide {
     100% {
-      top: -130px;
+      top: -120px;
     }
+  }
+  .main .text h1 ul li span {
+    height: 40px;
   }
   body section.second-page {
     padding: 50px;
@@ -745,7 +755,7 @@ section.last-page :is(span, p)::selection {
   }
   .main .text h1 ul {
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 15px;
   }
   .main .text a {
     width: 150px;
@@ -794,12 +804,17 @@ section.last-page :is(span, p)::selection {
     height: 36px;
   }
   .main .text h1 ul li {
+    height: 36px;
     animation: slide 7.5s steps(3) infinite;
+    line-height: 36px;
   }
   @keyframes slide {
     100% {
-      top: -117px;
+      top: -108px;
     }
+  }
+  .main .text h1 ul li span {
+    height: 36px;
   }
   body section.second-page {
     height: 2060px;
