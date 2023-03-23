@@ -12,10 +12,11 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* border: 1px solid red;*/
+  /* border: 1px solid red; */
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -531,10 +532,10 @@ section.last-page :is(span, p)::selection {
   color: #1d9bf0;
 }
 .last-page .social-links a:nth-child(4) i:hover {
-  color: #0a66c2;
+  color: #53d559;
 }
 .last-page .social-links a:nth-child(5) i:hover {
-  color: #53d559;
+  color: #0a66c2;
 }
 
 @media screen and (max-width: 1300px) {
@@ -913,5 +914,27 @@ section.last-page :is(span, p)::selection {
   }
   .last-page .contact .left {
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 352px) {
+  html {
+    font-size: 45%;
+  }
+  header {
+    padding: 15px 10px;
+  }
+  .main .text {
+    width: 250px;
+  }
+  .main .text a {
+    width: 100px;
+    height: 38px;
+  }
+  .last-page .social-links {
+    width: 220px;
+  }
+  header .menuBtn.open {
+    right: 8px;
+    top: 15px;
   }
 }
