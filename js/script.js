@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menuBtn");
 const menu = document.querySelector(".menu");
+let options = document.querySelectorAll(".option");
 
 window.addEventListener("scroll", () => {
   const row1 = document.querySelector(".row1");
@@ -34,3 +35,11 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("open");
   menu.classList.toggle("open");
 });
+
+console.log(options);
+for (let x = 0; x < options.length; x++) {
+  options[x].addEventListener("click", function () {
+    menuBtn.classList.remove("open");
+    menu.classList.remove("open");
+  });
+}
